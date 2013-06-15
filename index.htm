@@ -1,0 +1,75 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>AFCP Version2</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</head>
+	
+	<body>
+		<div id="header">
+			<img id="slogan" src="afcp_logo.jpg"/>
+			<form>
+				<input type="text" name="keyword" value="keyword" />
+				<input type="submit" id="search" value=""/>
+			</form>
+		
+		
+		</div>
+		
+		<div id="navbar">
+			<ul>
+				<li><a href="#tab_content_1">News</a></li>	
+				<li><a href="#tab_content_2">Activity</a></li>
+				<li><a href="#tab_content_3">Offer</a></li>
+				<li><a href="#tab_content_4">Acount</a></li>
+			</ul>
+			
+			<div class="tab_content" id="tab_content_1">
+				<p>1<p>
+			</div>
+			
+			<div class="tab_content" id="tab_content_2">
+				<p>2<p>
+			</div>
+			
+			<div class="tab_content" id="tab_content_3">
+				<p>3<p>
+			</div>
+			
+			<div class="tab_content" id="tab_content_4">
+				<p>4<p>
+			</div>
+		</div>
+		
+		<div id="middle">
+			<div id="left">
+				<div class="leftbar" id="calendar"></div>
+				<div class="leftbar" id="map"></div>
+			</div>
+			
+			<div id="content">
+				Je suis le contenu retourne par le server. 
+			</div>
+			
+			<div id="right">
+				Je suis les infos sur les offres d'emploi.
+			</div>
+		</div>	
+		
+		<div id="footer">
+			Je suis le footer : following us.....
+		</div>
+	<script>
+	$( "#navbar" ).tabs({ collapsible: true });
+	$( "#navbar" ).tabs({ active: false });
+	$( "#navbar").tabs();
+	$( "#calendar" ).datepicker({ autoSize: true });
+	$( "#calendar" ).datepicker();
+	</script>
+	</body>
+</html>
